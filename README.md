@@ -1,7 +1,7 @@
 # mercadinho
 
 Projeto para a disciplina de WEB IV
-_UTFPR Guarapuava_
+UTFPR Guarapuava
 
 Essa é a aquela lista para você usar no mercado e controlar quantos dols vai gastar antes de passar a compra.
 
