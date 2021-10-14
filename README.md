@@ -18,8 +18,8 @@ https://bit.ly/3AEvQHY
   - [ ] Cookie que dura apenas uma sessão do navegador
   - [ ] Cookie com tempo de vida customizado além de uma sessão do navegador
 - [ ] Controle de erros e exceção via web.xml
-    - [x] Tratamento por código de status ou exceção específica
-    - [x] Tratamento de erros genérico
+    - [ ] Tratamento por código de status ou exceção específica
+    - [ ] Tratamento de erros genérico
 - [ ] Expression Language (EL) para acessar os objetos de domínio (beans) da camada de modelo do MVC
 - [ ] JSTL e TagLib
   - [ ] forEach
