@@ -1,4 +1,4 @@
-# mercadinho
+# Mercadinho
 
 Projeto para a disciplina de WEB IV do curso de **TSI** da _UTFPR Guarapuava_
 
