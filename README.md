@@ -2,7 +2,7 @@
 
 Projeto para a disciplina de WEB IV do curso de **TSI** da _UTFPR Guarapuava_
 
-Essa é a aquela lista para você usar no mercado e controlar quantos _dols_ vai gastar antes de passar a compra.
+Essa é a aquela lista para você fazer enquanto está no mercado e controlar quantos _dols_ vai gastar antes de passar a compra.
 
 # Protótipos de telas no Figma
 https://bit.ly/3AEvQHY
