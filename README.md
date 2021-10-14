@@ -1,8 +1,6 @@
 # mercadinho
 
-Projeto para a disciplina de WEB IV
-
-UTFPR Guarapuava
+Projeto para a disciplina de WEB IV do curso de **TSI** da _UTFPR Guarapuava_
 
 Essa é a aquela lista para você usar no mercado e controlar quantos dols vai gastar antes de passar a compra.
 
