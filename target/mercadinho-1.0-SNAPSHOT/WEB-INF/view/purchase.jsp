@@ -4,30 +4,35 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 
-<t:template title="Suas comprinhas">
+<t:template title="Sua comprinha">
     <jsp:body>
-        <h4>Suas comprinhas</h4>
+        <h5>Comprinha de sábado, 15/09/2021</h5>
+        <div class="row">
+            <div class="col s6">
+                Mercadinho da vez: <span class="text-bold">DallPozzo</span>
+            </div>
+            <div class="col s6">
+                Total: <span class="text-bold">R$ 100,00</span>
+            </div>
+        </div>
 
         <table class="striped responsive-table">
             <thead>
                 <tr class="theme-text">
-                    <th>Data</th>
-                    <th>Dia da semana</th>
-                    <th>Mercado</th>
-                    <th>Total da compra</th>
+                    <th>Produto</th>
+                    <th>Preço Un.</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
                 </tr>
             </thead>
             <tbody>
-                <a href="sua-compra">
-                    alo
-                </a>
                 <tr>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                 </tr>
-                 <tr>
+                <tr>
                     <td></td>
                     <td></td>
                     <td></td>

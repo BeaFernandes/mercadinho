@@ -12,7 +12,7 @@
             <div class="col s8 right-align">
                 <div class="row mb0">
                     <div class="col s12">
-                        Mercado da vez
+                        Mercadinho da vez
                         <div class="input-field inline m0">
                             <input id="email_inline" type="email" class="my-input">
                         </div>
