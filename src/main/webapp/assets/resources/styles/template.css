@@ -1,0 +1,24 @@
+.my-sidenav {
+    height: 100%;
+
+    background-color: #FFFFFF;
+    color: #8B8B8B;
+    padding: 1em;
+}
+
+a {
+    color: #8B8B8B!important;
+}
+
+.main-content {
+    background: #FFFFFF;
+    height: 100%;
+    width: 90% !important;
+    padding: 1em 2em;
+    color: #8B8B8B!important;
+}
+
+.theme-text {
+    color: #8B8B8B!important;
+}
+

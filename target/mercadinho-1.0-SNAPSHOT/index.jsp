@@ -6,6 +6,38 @@
 
 <t:template title="Suas comprinhas">
     <jsp:body>
-        <h1>Suas comprinhas</h1>
+        <h4>Suas comprinhas</h4>
+
+        <table class="striped responsive-table">
+            <thead>
+                <tr class="theme-text">
+                    <th>Data</th>
+                    <th>Dia da semana</th>
+                    <th>Mercado</th>
+                    <th>Total da compra</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+
+        </table>
     </jsp:body>
 </t:template>
