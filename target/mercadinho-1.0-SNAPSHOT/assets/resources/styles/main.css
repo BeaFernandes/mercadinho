@@ -6,10 +6,20 @@
     margin-bottom: 1em;
 }
 
+.mb0 {
+    margin-bottom: 0!important;
+}
+
 .m0 {
     margin: 0!important;
 }
 
 .text-bold {
     font-weight: bold;
+}
+
+.my-input {
+    height: 2rem!important;
+    font-size: 14px!important;
+    color: #8B8B8B!important;
 }

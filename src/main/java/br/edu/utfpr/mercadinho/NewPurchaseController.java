@@ -9,7 +9,8 @@ import java.io.IOException;
 public class NewPurchaseController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        response.setContentType("text/html");
+        request.getRequestDispatcher("/WEB-INF/view/new-purchase.jsp").forward(request, response);
     }
 
     @Override
