@@ -5,7 +5,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
-@WebServlet(name = "listPurchaseController", value = "/suas-compras")
+@WebServlet(name = "ListGroceriesController", value = "/suas-compras")
 public class ListGroceriesController extends HttpServlet {
 
     public void init() {

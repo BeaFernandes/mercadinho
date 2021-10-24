@@ -16,6 +16,7 @@
                         <div class="input-field inline m0">
                             <input id="email_inline" type="email" class="my-input">
                         </div>
+                        <a href="cadastrar-mercado">  <i class="material-icons">add</i> </a>
                     </div>
                 </div>
                 <div class="row mb0">
@@ -24,6 +25,7 @@
                         <div class="input-field inline m0">
                             <input id="email_inline" type="email" class="my-input">
                         </div>
+                        <i class="material-icons white-text">attach_money</i>
                     </div>
                 </div>
             </div>

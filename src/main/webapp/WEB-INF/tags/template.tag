@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="assets/resources/styles/main.css"></link>
     <link rel="stylesheet" href="assets/resources/styles/template.css"></link>
     <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.css"></link>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+
 
 </head>
 <body class="grey lighten-3">
@@ -33,7 +35,7 @@
                 <a href="" class="brand-logo amber-text text-lighten-3">
                     <img
                         src="assets/images/logo.png"
-                        class=" img-responsive" height="70px"></img>
+                        class="img-responsive" height="70px"></img>
                 </a>
             </div>
         </nav>
@@ -69,7 +71,8 @@
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>-->
+<script type="text/javascript" src="assets/libraries/materialize/js/materialize.min.js"></script>
 
 </body>
 </html>

@@ -1,9 +1,10 @@
 package br.edu.utfpr.mercadinho.util;
 
 public class Constants {
-    public static final String COUNTER_APPLICATION = "counterApplication";
-    public static final String COUNTER_SESSION = "counterSession";
+    //TO-DO apagar essas duas linhas
+    //public static final String COUNTER_APPLICATION = "counterApplication";
+    //public static final String COUNTER_SESSION = "counterSession";
 
     //Nome do persistence unit
-    public static final String PERSISTENCE_UNIT = "hello-app-pu";
+    public static final String PERSISTENCE_UNIT = "mercadinho-pu";
 }

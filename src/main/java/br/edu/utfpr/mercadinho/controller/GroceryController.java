@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "purchaseController", value = "/sua-compra")
+@WebServlet(name = "GroceryController", value = "/sua-compra")
 public class GroceryController extends HttpServlet {
 
     public void init() {
