@@ -11,7 +11,7 @@ public class MarketMapper {
     }
 
     public static MarketDTO toDTO(Market entity) {
-        MarketDTO dto = new MarketDTO(entity.getName());
+        MarketDTO dto = new MarketDTO(entity.getId(), entity.getName());
         return dto;
     }
 }

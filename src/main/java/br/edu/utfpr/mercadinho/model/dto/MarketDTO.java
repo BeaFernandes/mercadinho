@@ -5,5 +5,8 @@ import lombok.*;
 @Data
 public class MarketDTO {
     @NonNull
+    private Long id;
+
+    @NonNull
     private String name;
 }

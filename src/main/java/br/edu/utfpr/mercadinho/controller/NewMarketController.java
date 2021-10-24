@@ -31,6 +31,7 @@ public class NewMarketController extends HttpServlet {
 
         marketService.save(market);
 
-        request.getRequestDispatcher("/WEB-INF/view/new-grocery.jsp").forward(request, response);
+        //request.getRequestDispatcher("/WEB-INF/view/new-grocery.jsp").forward(request, response);
+        response.sendRedirect("nova-compra");
     }
 }
