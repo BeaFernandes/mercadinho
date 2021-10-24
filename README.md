@@ -35,6 +35,6 @@ https://bit.ly/3AEvQHY
     - [ ] Armazenamento no LocalStorage
     - [ ] Uso de plugin JQuery
 - [ ] JPA
-    - [ ] No mínimo 2 entidades.
+    - [x] No mínimo 2 entidades.
     - [ ] Operações de CRUD. 
   
