@@ -23,3 +23,7 @@
     font-size: 14px!important;
     color: #8B8B8B!important;
 }
+
+.pointer {
+    cursor: pointer;
+}

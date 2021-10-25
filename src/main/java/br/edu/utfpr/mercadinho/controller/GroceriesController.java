@@ -6,7 +6,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
 @WebServlet(name = "ListGroceriesController", value = "/suas-compras")
-public class ListGroceriesController extends HttpServlet {
+public class GroceriesController extends HttpServlet {
 
     public void init() {
     }
