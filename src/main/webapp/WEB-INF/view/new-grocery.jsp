@@ -49,7 +49,7 @@
                 </tr>
                 </thead>
             </table>
-            <form action="lista" method="post" name="item-form">
+            <form action="adicionar-item" method="post" name="item-form">
                 <div class="row mb0">
                     <div class="input-field col s3">
                         <input placeholder="Produto" id="name" name="name" type="text" class="validate my-input" required>

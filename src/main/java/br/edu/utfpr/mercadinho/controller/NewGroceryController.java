@@ -34,14 +34,9 @@ public class NewGroceryController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String market = request.getParameter("market");
-        getServletContext().setAttribute("market", market);
         List<Item> items = (List<Item>) request.getSession().getAttribute("items");
         int total = request.getSession().getAttribute("total") == null ? 0 : (Integer) request.getSession().getAttribute("total");
-
-
-        Calendar calendar = Calendar.getInstance();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-        String date = sdf.format(calendar.getTime());
+        Date date = groceryService.getTime();
 
         //if(items == null){
         //    String message = "Você precisa adicionar pelo menos um item.";
@@ -49,11 +44,10 @@ public class NewGroceryController extends HttpServlet {
         //    response.sendRedirect("nova-compra");
         //}
 
-        Grocery grocery = new Grocery(total, date, market, items);
+        Grocery grocery = new Grocery(total, date, market);
 
         groceryService.save(grocery);
         for (Item item : items) {
-            item.setGrocery(grocery);
             itemService.save(item);
         }
 

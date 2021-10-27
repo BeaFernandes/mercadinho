@@ -4,6 +4,8 @@ import java.util.List;
 import br.edu.utfpr.mercadinho.model.dao.AbstractDAO;
 import br.edu.utfpr.mercadinho.util.JPAUtil;
 
+import javax.persistence.Query;
+
 public class AbstractService<PK, T> {
 
     protected AbstractDAO<PK, T> dao;
@@ -87,4 +89,11 @@ public class AbstractService<PK, T> {
         }
         return isSuccess;
     }
+
+    public List<T> listByForeignOrObjectProperty(String propertyName, Object propertyValue) {
+        List<T> entities = null;
+        entities = dao.listByForeignOrObjectProperty(propertyName, propertyValue);
+        return entities;
+    }
+
 }

@@ -6,19 +6,19 @@
 
 <t:template title="Sua comprinha">
     <jsp:body>
-        <h5>Comprinha de sábado, 15/09/2021</h5>
+        <h5>Comprinha de sábado, ${date}</h5>
         <div class="row">
             <div class="col s6">
-                Mercadinho da vez: <span class="text-bold">DallPozzo</span>
+                Mercadinho da vez: <span class="text-bold">${market}</span>
             </div>
             <div class="col s6">
-                Total: <span class="text-bold">R$ 100,00</span>
+                Total: <span class="text-bold">${total}</span>
             </div>
         </div>
 
-        <table class="striped responsive-table">
+        <table class="striped responsive-table theme-text">
             <thead>
-                <tr class="theme-text">
+                <tr>
                     <th>Produto</th>
                     <th>Preço Un.</th>
                     <th>Quantidade</th>
@@ -26,6 +26,16 @@
                 </tr>
             </thead>
             <tbody>
+                <c:if test="${not empty items}">
+                    <c:forEach var="item" items="${items}">
+                        <tr>
+                            <td>${item.name}</td>
+                            <td>${item.getFormatedPrice()}</td>
+                            <td>${item.amount}</td>
+                            <td>${item.getFormatedTotal()}</td>
+                        </tr>
+                    </c:forEach>
+                </c:if>
                 <tr>
                     <td></td>
                     <td></td>

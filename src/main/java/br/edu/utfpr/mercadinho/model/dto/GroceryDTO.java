@@ -14,7 +14,7 @@ public class GroceryDTO {
     private float total;
 
     @NonNull
-    private String date;
+    private Date date;
 
     @NonNull
     private String market;

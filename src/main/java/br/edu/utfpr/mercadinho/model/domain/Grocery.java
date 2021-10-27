@@ -2,6 +2,7 @@ package br.edu.utfpr.mercadinho.model.domain;
 
 import lombok.*;
 import javax.persistence.*;
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -20,13 +21,6 @@ public class Grocery {
         this.market = market;
     }
 
-    public Grocery(float total, String date, String market, List<Item> items) {
-        this.total = total;
-        this.date = date;
-        this.market = market;
-        this.items = items;
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -35,12 +29,24 @@ public class Grocery {
     private float total;
 
     @NonNull
-    private String date;
+    private Date date;
 
     @NonNull
     private String market;
 
+    @Transient
+    public String getFormatedDate(){
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        String date = sdf.format(this.date);
+        return date;
+    }
 
     @Transient
-    private List<Item> items;
+    public String getFormatedTotal(){
+        DecimalFormat df = new DecimalFormat("#.00");
+        String total = df.format(this.total);
+        total = total.replace(".", ",");
+
+        return "R$ " + total;
+    }
 }

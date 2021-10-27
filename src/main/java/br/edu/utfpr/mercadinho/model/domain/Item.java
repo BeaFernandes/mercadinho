@@ -3,6 +3,7 @@ package br.edu.utfpr.mercadinho.model.domain;
 import lombok.AccessLevel;
 import lombok.*;
 import javax.persistence.*;
+import java.text.DecimalFormat;
 
 @Entity
 @Table(name = "products")
@@ -36,4 +37,24 @@ public class Item {
 
     @ManyToOne
     private Grocery grocery;
+
+
+    @Transient
+    public String getFormatedTotal(){
+        return moneyFormat(this.total);
+    }
+
+    @Transient
+    public String getFormatedPrice(){
+        return moneyFormat(this.price);
+    }
+
+    @Transient
+    public String moneyFormat(float value){
+        DecimalFormat df = new DecimalFormat("#.00");
+        String valueFormated = df.format(value);
+        valueFormated = valueFormated.replace(".", ",");
+
+        return "R$ " + valueFormated;
+    }
 }
