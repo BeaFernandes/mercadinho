@@ -19,6 +19,8 @@ public class ListGroceriesController extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         List<Grocery> groceries = groceryService.findAll();
+        int counter = getServletContext().getAttribute("counter") == null ? 0 : (Integer) getServletContext().getAttribute("counter");
+        getServletContext().setAttribute("counter", counter);
 
         request.setAttribute("groceries", groceries);
 

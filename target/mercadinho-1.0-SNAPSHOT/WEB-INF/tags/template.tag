@@ -16,7 +16,7 @@
     <base href="${pageContext.request.contextPath}/">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
+    <link rel="icon" type="image/png" href="assets/resources/images/favicon.ico" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/resources/styles/main.css"></link>
@@ -34,7 +34,7 @@
             <div class="nav-wrapper amber darken-1">
                 <a href="" class="brand-logo amber-text text-lighten-3">
                     <img
-                        src="assets/images/logo.png"
+                        src="assets/resources/images/logo.png"
                         class="img-responsive" height="70px"></img>
                 </a>
             </div>

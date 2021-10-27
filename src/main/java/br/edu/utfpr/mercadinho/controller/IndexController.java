@@ -9,7 +9,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "IndexController", value = "/")
+@WebServlet(name = "IndexController", value = "")
 public class IndexController extends HttpServlet {
 
 

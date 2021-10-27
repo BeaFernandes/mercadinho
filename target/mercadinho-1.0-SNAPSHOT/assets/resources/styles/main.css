@@ -27,3 +27,16 @@
 .pointer {
     cursor: pointer;
 }
+
+.erro-page {
+    background-color: #ffb300!important;
+}
+
+.center-img {
+    position:absolute;
+    left:45%;
+    top: 40%;
+    width: 200px;
+    margin-top:-50px;
+    margin-left:-50px;
+}

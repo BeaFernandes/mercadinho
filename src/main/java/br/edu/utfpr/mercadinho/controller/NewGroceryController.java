@@ -48,8 +48,12 @@ public class NewGroceryController extends HttpServlet {
 
         groceryService.save(grocery);
         for (Item item : items) {
+            item.setGrocery(grocery);
             itemService.save(item);
         }
+        int counter = (Integer) getServletContext().getAttribute("counter");
+        counter = counter+1;
+        getServletContext().setAttribute("counter", counter);
 
         request.getSession().removeAttribute("items");
         request.getSession().removeAttribute("total");

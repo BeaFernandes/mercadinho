@@ -6,7 +6,7 @@
 
 <t:template title="Sua comprinha">
     <jsp:body>
-        <h5>Comprinha de sábado, ${date}</h5>
+        <h5>Comprinha de ${date}</h5>
         <div class="row">
             <div class="col s6">
                 Mercadinho da vez: <span class="text-bold">${market}</span>
@@ -36,24 +36,6 @@
                         </tr>
                     </c:forEach>
                 </c:if>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
             </tbody>
 
         </table>

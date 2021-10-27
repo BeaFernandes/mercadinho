@@ -100,6 +100,10 @@
         <script>
             window.onload = function () {
 
+                if(localStorage['market'] != null){
+                    $('#market').val(localStorage['market']);
+                }
+
                 $('.calculate-total').change(function (){
                     let price = $('#price').val() == "" ? 0 : parseFloat($('#price').val());
                     let amount = $('#amount').val() == "" ? 1 : parseInt($('#amount').val());
@@ -114,6 +118,10 @@
                     $('#total_per_item').val(total);
 
                     console.log($('#market').val());
+                });
+
+                $('#market').change(function (){
+                    localStorage['market'] = $(this).find(':selected').val();
                 });
 
                 $.get('mercados', function (data) {
