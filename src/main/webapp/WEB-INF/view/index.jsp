@@ -11,10 +11,19 @@
                 <h4>Suas comprinhas</h4>
             </div>
             <div class="col s6 right-align">
-                <p class="big">
-                    São ${counter} ao todo
-                </p>
+                <div class="row">
+                    <div class="right m1">Início da sessão: ${sessionStart}</div>
+                </div>
+                <div class="row">
+                    <div class="right m1">1ª sessão últimas 24h: ${firstSession}</div>
+                </div>
+                <div class="row">
+                    <p class="big">
+                        Você tem ${counter} comprinha(s) ao todo
+                    </p>
+                </div>
             </div>
+
         </div>
 
         <table class="striped responsive-table theme-text">
@@ -44,7 +53,7 @@
                 </c:if>
                 <c:if test="${empty groceries}">
                     <tr>
-                        <td colspan="3" class="center-align">
+                        <td colspan="4" class="center-align">
                             Nenhuma lista encontrada
                         </td>
                     </tr>

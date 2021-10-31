@@ -16,7 +16,6 @@ public class IndexController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
         request.getRequestDispatcher("/suas-compras").forward(request, response);
     }
 
